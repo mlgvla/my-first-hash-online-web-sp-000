@@ -1,3 +1,5 @@
+require 'pry
+'
 def my_hash
   # use the literal constructor to set the variable, my_hash, equal to a hash with key/value pairs of your choice.
   my_hash = {"first_name" => "Monica", "middle_name" => "Lee", "last_name" => "Gerard", "age" => "guess"}
@@ -32,10 +34,11 @@ def adding
                  }
   # add 2 muskets to the shipping_manifest hash below
   shipping_manifest["muskets"] = 2
+  binding.pry
 
 
   # add 4 gun powder to the shipping_manifest hash below
-  shipping_manifest["gun_powder"] =4
+  shipping_manifest["gun_powder"] = 4
 
 
   # return the shipping_manifest hash below
